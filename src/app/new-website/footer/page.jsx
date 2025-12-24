@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="flex justify-between items-center text-xs text-zinc-600 uppercase tracking-widest border-t border-zinc-900 pt-8">
                 <div>© 2025 Adithya INC.</div>
                 <div className="flex space-x-6">
-                    <a href="#" className="hover:text-white transition-colors">Instagram</a>
+                    <a href="https://instagram.com/itzz_adi_0508" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
                     <a href="#" className="hover:text-white transition-colors">Twitter</a>
                     <a href="#" className="hover:text-white transition-colors">Discord</a>
                 </div>

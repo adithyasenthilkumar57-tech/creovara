@@ -1,11 +1,16 @@
 "use client";
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 import HeroSection from './herosection/page';
+import LoginGate from '../components/LoginGate';
 
 export default function NewWebsitePage() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
     return (
         <div className="bg-black text-white min-h-screen font-sans selection:bg-cyan-400 selection:text-black overflow-x-hidden">
+            {!isLoggedIn && <LoginGate onLoginSuccess={() => setIsLoggedIn(true)} />}
 
             {/* HEADER IS IMPORTED IN PARENT, BUT WE NEED TO ENSURE LAYOUT WORKS */}
             {/* Assuming parent layout handles Header placement. We focus on content here. */}
