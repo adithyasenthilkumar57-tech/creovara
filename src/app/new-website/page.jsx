@@ -1,6 +1,8 @@
 "use client";
 import Link from 'next/link';
 
+import HeroSection from './herosection/page';
+
 export default function NewWebsitePage() {
     return (
         <div className="bg-black text-white min-h-screen font-sans selection:bg-cyan-400 selection:text-black overflow-x-hidden">
@@ -9,27 +11,7 @@ export default function NewWebsitePage() {
             {/* Assuming parent layout handles Header placement. We focus on content here. */}
 
             {/* HERO SECTION */}
-            <section className="relative h-screen flex flex-col justify-center items-center overflow-hidden">
-                {/* Animated Gradient Background */}
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[conic-gradient(from_90deg_at_50%_50%,#00000000_50%,#0891b2_100%)] animate-spin-slow"></div>
-                </div>
-
-                <div className="z-10 text-center relative mix-blend-exclusion">
-                    <h1 className="text-[15vw] font-black leading-none tracking-tighter hover:skew-x-12 transition-transform duration-500 cursor-none">
-                        AVANT
-                    </h1>
-                    <h1 className="text-[15vw] font-black leading-none tracking-tighter text-transparent stroke-cyan-400 opacity-50 hover:opacity-100 transition-opacity duration-300">
-                        GARDE
-                    </h1>
-                </div>
-
-                <div className="absolute bottom-12 w-full flex justify-between px-12 uppercase text-xs tracking-[0.2em] text-cyan-400">
-                    <span>Vol. 01 — Genesis</span>
-                    <span className="animate-pulse">Scroll to Explore</span>
-                    <span>2025 Collection</span>
-                </div>
-            </section>
+            <HeroSection />
 
             {/* MARQUEE SECTION */}
             <div className="bg-cyan-400 text-black py-4 overflow-hidden whitespace-nowrap">
@@ -43,7 +25,7 @@ export default function NewWebsitePage() {
             </div>
 
             {/* TRENDING ITEMS GRID */}
-            <section className="py-32 px-6 md:px-12 bg-zinc-950">
+            <section className="py-32 px-6 md:px-12 backdrop-blur-sm bg-black/30">
                 <div className="flex justify-between items-end mb-24 border-b border-zinc-800 pb-8">
                     <h2 className="text-6xl md:text-8xl font-bold tracking-tighter">
                         TRENDING
@@ -61,7 +43,7 @@ export default function NewWebsitePage() {
                     <div className="group relative aspect-[3/4] bg-zinc-900 overflow-hidden border border-zinc-800">
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60 z-10"></div>
                         <img
-                            src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&q=80"
+                            src="https://assets.woodland.social/product/images/FGC0DN0AR922A/BLACK/FGC0DN0AR922A_004_0.webp"
                             alt="Neon Trench"
                             className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 saturate-0 group-hover:saturate-100"
                         />
@@ -105,7 +87,7 @@ export default function NewWebsitePage() {
                     <div className="group relative aspect-[3/4] bg-zinc-900 overflow-hidden border border-zinc-800">
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60 z-10"></div>
                         <img
-                            src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&q=80"
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BvcnQlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D"
                             alt="Data Visor"
                             className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 saturate-0 group-hover:saturate-100"
                         />
