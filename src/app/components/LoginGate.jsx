@@ -420,6 +420,11 @@ export default function LoginGate({ onLoginSuccess }) {
             };
             const onSubmitClick = () => {
                 if (emailValid && checkboxEl.checked && nameValid && sprayRepeatCounter > 1) {
+                    if (emailEl.value !== "adithyasenthilkumar57@gmail.com") {
+                        alert("Access Denied: This account is not authorized.");
+                        return;
+                    }
+
                     gsap.to(".login-svg-root > *", {
                         duration: .1,
                         opacity: 0,
